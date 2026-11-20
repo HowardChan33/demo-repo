@@ -1,0 +1,61 @@
+:root {
+  --bg-0: #e8efe6;
+  --bg-1: #d5e4d4;
+  --ink: #122018;
+  --ink-soft: #3d5246;
+  --muted: #6a7d72;
+  --panel: rgba(255, 252, 247, 0.78);
+  --panel-solid: #fffcf7;
+  --line: rgba(18, 32, 24, 0.12);
+  --forest: #0f2e1f;
+  --forest-mid: #1a4732;
+  --amber: #e8a838;
+  --amber-deep: #c4841c;
+  --signal: #2f6b4f;
+  --danger: #9b3b2f;
+  --shadow-soft: 0 18px 50px rgba(15, 46, 31, 0.08);
+  --radius: 18px;
+  --font-display: "Bebas Neue", sans-serif;
+  --font-body: "Figtree", sans-serif;
+  color: var(--ink);
+  background: var(--bg-0);
+  font-family: var(--font-body);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(1200px 600px at 10% -10%, rgba(232, 168, 56, 0.18), transparent 55%),
+    radial-gradient(900px 500px at 100% 0%, rgba(47, 107, 79, 0.16), transparent 50%),
+    linear-gradient(165deg, var(--bg-0), var(--bg-1) 55%, #cfdccb);
+  background-attachment: fixed;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  color: var(--forest-mid);
+}
+
+::selection {
+  background: rgba(232, 168, 56, 0.35);
+}
